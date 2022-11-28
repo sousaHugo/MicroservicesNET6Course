@@ -1,4 +1,5 @@
 ﻿
+using Catalog.Domain.Interfaces;
 using Catalog.Infrastructure.Context;
 using Catalog.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;

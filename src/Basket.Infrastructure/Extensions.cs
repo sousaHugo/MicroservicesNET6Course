@@ -1,4 +1,5 @@
-﻿using Basket.Infrastructure.Repositories;
+﻿using Basket.Domain.Interfaces;
+using Basket.Infrastructure.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 

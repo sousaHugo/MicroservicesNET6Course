@@ -1,5 +1,5 @@
 using Discount.Domain.Entities;
-using Discount.Infrastructure.Repositories;
+using Discount.Domain.Interfaces;
 using Grpc.Core;
 
 namespace Discount.Gprc.Services

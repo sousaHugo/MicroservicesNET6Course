@@ -1,5 +1,5 @@
 ﻿using Catalog.Domain.Entities;
-using Catalog.Infrastructure.Repositories;
+using Catalog.Domain.Interfaces;
 using Microsoft.Extensions.Logging;
 
 namespace Catalog.Application.Services;

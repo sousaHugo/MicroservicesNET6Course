@@ -1,5 +1,5 @@
 ﻿using Basket.Domain.Entities;
-using Basket.Infrastructure.Repositories;
+using Basket.Domain.Interfaces;
 
 namespace Basket.Application.Services;
 

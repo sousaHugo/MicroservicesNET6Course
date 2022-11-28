@@ -1,5 +1,5 @@
 ﻿using Discount.Domain.Entities;
-using Discount.Infrastructure.Repositories;
+using Discount.Domain.Interfaces;
 
 namespace Discount.Application.Services;
 

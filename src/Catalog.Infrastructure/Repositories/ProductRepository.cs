@@ -1,4 +1,5 @@
 ﻿using Catalog.Domain.Entities;
+using Catalog.Domain.Interfaces;
 using Catalog.Infrastructure.Context;
 using MongoDB.Driver;
 
