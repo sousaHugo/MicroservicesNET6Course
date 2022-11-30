@@ -18,7 +18,7 @@ namespace Catalog.API.Controllers
             _productService = ProductService;
         }
 
-        [HttpGet("Get")]
+        [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetAsync()
         {
@@ -39,13 +39,15 @@ namespace Catalog.API.Controllers
                 return NotFound();
             }
         }
-        [HttpGet("{Category}", Name = "GetByCategory")]
+        [Route("[action]/{Category}", Name = "GetByCategory")]
+        [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetByCategoryAsync(string Category)
         {
             return Ok(await _productService.GetByCategoryAsync(Category));
         }
-        [HttpGet("{Name}", Name = "GetByName")]
+        [Route("[action]/{Name}", Name = "GetByName")]
+        [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetByNameAsync(string Name)
         {
